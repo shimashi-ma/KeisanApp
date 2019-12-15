@@ -10,11 +10,9 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="@android:dimen/notification_large_icon_width"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_marginTop="97dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMessage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,38 +22,31 @@
         android:id="@+id/spinner"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="197dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginTop="77dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewMessage" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="37dp"
+        android:layout_marginTop="323dp"
         android:text="問題を選択して「スタート」ボタンを押してください"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="300dp"
+        android:id="@+id/button7"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="32dp"
         android:text="スタート"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
