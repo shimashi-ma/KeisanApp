@@ -1,5 +1,6 @@
 package jp.shimashimastudio.keisanapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -30,8 +31,15 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener{
 
             //選択したアイテムをゲット
-            val numberOfQuestion = spinner.selectedItem
+            val numberOfQuestion: Int = spinner.selectedItem.toString().toInt() //spinner.selectedItemの型はAnyなので型変換してる
 
+
+            //インテントの渡し先を決める（インスタンス化）
+            val intent = Intent(this@MainActivity,TestActivity::class.java)
+            //渡す情報をインテントにセットする
+            intent.putExtra("ほにゃらら",numberOfQuestion)
+            //新しい画面を開いてインテントを渡す
+            startActivity(intent)
 
         }
     }
